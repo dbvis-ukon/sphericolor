@@ -132,13 +132,13 @@ SpheriColor and its bundled gamut asset are MIT licensed. If you use SpheriColor
 work, please cite the associated paper:
 
 > Julius Rauscher, Johannes Fuchs, Daniel A. Keim, and Frederik L. Dennig. “SpheriColor:
-> Colormaps for Spherical Geospatial Input Topographies.” EuroVis 2026 Short Papers, 2026.
+> Colormaps for Spherical Geospatial Input Topographies.” IEEE Visualization Conference (VIS) Short Papers, 2026.
 
 ```bibtex
 @inproceedings{rauscher2026sphericolor,
   title     = {{SpheriColor}: Colormaps for Spherical Geospatial Input Topographies},
   author    = {Rauscher, Julius and Fuchs, Johannes and Keim, Daniel A. and Dennig, Frederik L.},
-  booktitle = {EuroVis 2026 Short Papers},
+  booktitle = {IEEE Visualization Conference (VIS) Short Papers},
   year      = {2026}
 }
 ```
