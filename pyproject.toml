@@ -1,0 +1,76 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sphericolor"
+version = "0.1.0"
+description = "Dataset-specific color mappings for spherical geographic data"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Julius Rauscher" },
+  { name = "Johannes Fuchs" },
+  { name = "Daniel A. Keim" },
+  { name = "Frederik L. Dennig" },
+]
+keywords = ["colormap", "geospatial", "visualization", "CAM16-UCS"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "scikit-learn>=1.4",
+  "coloraide>=3.3",
+  "hsluv>=5",
+  "pycolormap-2d>=1.1.7",
+]
+
+[project.optional-dependencies]
+test = ["mypy>=1.10", "pytest>=8", "ruff>=0.6"]
+build = ["build>=1.2"]
+
+[project.urls]
+Repository = "https://github.com/dbvis-ukon/sphericolor"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sphericolor"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/tests",
+  "/docs",
+  "/README.md",
+  "/LICENSE",
+  "/CITATION.cff",
+  "/CHANGELOG.md",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+packages = ["sphericolor"]
+mypy_path = "src"
+exclude = ["tests"]
+ignore_missing_imports = true

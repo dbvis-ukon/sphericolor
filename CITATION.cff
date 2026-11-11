@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use SpheriColor in academic work, please cite the associated paper."
+title: "SpheriColor"
+type: software
+version: 0.1.0
+date-released: 2026-11-11
+license: MIT
+authors:
+  - family-names: Rauscher
+    given-names: Julius
+    orcid: "https://orcid.org/0000-0003-1318-9642"
+  - family-names: Fuchs
+    given-names: Johannes
+  - family-names: Keim
+    given-names: Daniel A.
+    orcid: "https://orcid.org/0000-0001-7966-9740"
+  - family-names: Dennig
+    given-names: Frederik L.
+    orcid: "https://orcid.org/0000-0003-1116-8450"
+preferred-citation:
+  type: conference-paper
+  title: "SpheriColor: Colormaps for Spherical Geospatial Input Topographies"
+  authors:
+    - family-names: Rauscher
+      given-names: Julius
+      orcid: "https://orcid.org/0000-0003-1318-9642"
+    - family-names: Fuchs
+      given-names: Johannes
+    - family-names: Keim
+      given-names: Daniel A.
+      orcid: "https://orcid.org/0000-0001-7966-9740"
+    - family-names: Dennig
+      given-names: Frederik L.
+      orcid: "https://orcid.org/0000-0003-1116-8450"
+  collection-title: "EuroVis 2026 Short Papers"
+  year: 2026
