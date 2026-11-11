@@ -1,11 +1,12 @@
 # SpheriColor
 
+[![PyPI](https://img.shields.io/pypi/v/sphericolor.svg)](https://pypi.org/project/sphericolor/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 SpheriColor generates dataset-specific colors for spherical geographic references. It maps
 geographic or custom pairwise distances into CAM16-UCS and the displayable sRGB gamut.
 
-![Comparison of SpheriColor and baseline colormap methods](docs/teaser.png)
+![Comparison of SpheriColor and baseline colormap methods](https://raw.githubusercontent.com/dbvis-ukon/sphericolor/main/docs/teaser.png)
 
 ## Installation
 
